@@ -5,6 +5,10 @@
  - [LeetCode题目解题思路及代码实现](./leetcode)
 
  - [知识点总结](./summary)
+ 
+## 参考手册
+ - [代码随想录](https://programmercarl.com/)
+ - [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
 ## 题目分类
 
 ### 数组操作
