@@ -45,4 +45,5 @@
 ### 未分类
 
 ### 待解决
- - [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+ - 手写KMP算法 [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
+ - 快排&堆 [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
