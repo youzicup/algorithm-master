@@ -65,6 +65,13 @@ int main() {
  - vec.push_back(x) 将x加到末尾
  - vec.pop_back() 删除最后一个元素，不返回
 
+4. stack
+ - st.push(); 元素入栈
+ - st.pop(); 栈顶元素出栈
+ - st.size(); 返回栈的大小(元素个数)
+ - st.top(); 返回栈顶元素
+ - st.empty(); 判断栈是否为空
+
 ## 性能分析
 
 ### 耗时分析
