@@ -17,12 +17,12 @@
 一般的C++解题框架可以按以下方式编写：
 
 ```C++
-#include<bits/stdc++.h>
-#include<algorithm>
-#include<cmath>
-#include<cstring>
-#include<iostream>
-#include<vector>
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <cmath>
+#include <cstring>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -62,3 +62,24 @@ int main() {
  - vec.front(); vector中得到第一个元素的值
  - vec.back(); vector中得到最后一个元素的值
  - vec.at(i); 相当于vec[i];
+ - vec.push_back(x) 将x加到末尾
+ - vec.pop_back() 删除最后一个元素，不返回
+
+## 性能分析
+
+### 耗时分析
+
+```C++
+#include <time.h> // or  #include <ctime>
+
+clock_t start, stop;
+double duration; // 以秒为单位
+int main() {
+  start = clock();
+  MyFunc();
+  stop = clock();
+  duration = ((double)(stop - start)) / CLK_TCK;
+
+  return 0;
+}
+```
