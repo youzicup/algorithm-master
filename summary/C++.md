@@ -64,6 +64,7 @@ int main() {
  - vec.at(i); 相当于vec[i];
  - vec.push_back(x) 将x加到末尾
  - vec.pop_back() 删除最后一个元素，不返回
+ - accumulate(vec.begin(), vec.end(), 0) 从`指针1`到`指针2 - 1`的所有元素相加；若第三个元素为0则实现求和，若为 `" "` 则实现字符串拼接
 
 4. stack
  - st.push(); 元素入栈
@@ -71,6 +72,21 @@ int main() {
  - st.size(); 返回栈的大小(元素个数)
  - st.top(); 返回栈顶元素
  - st.empty(); 判断栈是否为空
+
+5. string
+ - s.begin()
+ - s.end()
+ - s.erase()
+ ```C++
+ s.erase(int index); // 删除下标从index开始直到字符串结尾的所有元素
+ s.erase(int index, int num); // 删除从下标index开始的num个元素
+ // 删除[it1,it2)区域的元素，函数的返回值是指向删除元素的下一个元素的迭代器
+ s.erase(string::iterator it1,string::iterator it2)
+ ```
+ - remove(s.begin(), s.end(), 0)
+   - 将要区域内要保留的元素全部移动到区域前端，返回删除后的结尾迭代器end
+   - 因此remove函数不会改变size
+   - 在对字符串进行处理时，要结合erase使用 s.erase(remove(s.begin(), s.end(), ' '), a.end())
 
 ## 性能分析
 
