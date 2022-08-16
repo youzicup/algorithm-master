@@ -76,6 +76,10 @@ int main() {
 5. string
  - s.begin()
  - s.end()
+ - s.size()
+ - s.back()
+ - s.push_back()
+ - s.pop_back()
  - s.erase()
  ```C++
  s.erase(int index); // 删除下标从index开始直到字符串结尾的所有元素
