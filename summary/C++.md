@@ -91,6 +91,7 @@ int main() {
    - 将要区域内要保留的元素全部移动到区域前端，返回删除后的结尾迭代器end
    - 因此remove函数不会改变size
    - 在对字符串进行处理时，要结合erase使用 s.erase(remove(s.begin(), s.end(), ' '), a.end())
+ - memset(void *s,int c,unsigned long n) 为指针变量s所指的前n个字节的内存单元填充给定的int型数值c，它可以为任何数据进行初始化。
 
 ## 性能分析
 
