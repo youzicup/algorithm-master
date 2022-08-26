@@ -33,7 +33,7 @@ int main() {
 
 ### 函数库说明
 
-1. algorithm
+#### 1. algorithm
  - max(a, b)
  - min(a, b)
  - abs(a, b) 返回a的绝对值，a必须为整型，浮点型需要用math.h下的fabs
@@ -46,7 +46,7 @@ int main() {
  - max_element(a, a+n) 查找 `[a,a+n)` 最大值所在地址
  - min_element(a, a+n) 查找 `[a,a+n)` 最小值所在地址
 
-2. cmath
+#### 2. cmath
  - ceil(x) 向上取整
  - floor(x) 向下取整
  - round(x) 四舍五入取整
@@ -54,7 +54,7 @@ int main() {
  - sqrt(x) 开方
  - pow(x, y) x的y次方
 
-3. vector
+#### 3. vector
  - vec.begin(); 第一个元素的指针,注意是 **指针**
  - vec.end(); vector中最后一个元素+1的 **指针**
  - vec[0],vec[1],vec[2] vector对象的访问
@@ -66,14 +66,14 @@ int main() {
  - vec.pop_back() 删除最后一个元素，不返回
  - accumulate(vec.begin(), vec.end(), 0) 从`指针1`到`指针2 - 1`的所有元素相加；若第三个元素为0则实现求和，若为 `" "` 则实现字符串拼接
 
-4. stack
+#### 4. stack
  - st.push(); 元素入栈
  - st.pop(); 栈顶元素出栈
  - st.size(); 返回栈的大小(元素个数)
  - st.top(); 返回栈顶元素
  - st.empty(); 判断栈是否为空
 
-5. string
+#### 5. string
  - s.begin()
  - s.end()
  - s.size()
@@ -92,6 +92,22 @@ int main() {
    - 因此remove函数不会改变size
    - 在对字符串进行处理时，要结合erase使用 s.erase(remove(s.begin(), s.end(), ' '), a.end())
  - memset(void *s,int c,unsigned long n) 为指针变量s所指的前n个字节的内存单元填充给定的int型数值c，它可以为任何数据进行初始化。
+ 
+#### 6. unordered_map 无序映射
+ - 初始化方式
+ > unordered_map<int, bool> map;
+ - 查询是否存在
+ > if(m.find(key) != m.end())
+
+ - map.begin(); 返回第一个键值对的正向迭代器
+ - map.end(); 返回最后一个键值对后一个位置的正向迭代器
+ - map.size(); 返回map的大小
+ - map.empty(); 判空
+ - map.find(key); 查找 `key` 为键的键值对，找到返回该位置的迭代器，否则返回 `map.end()`
+ - map.insert(std::make_pair(key, val)); 插入新键值对
+ - map.emplace(key, val); 插入新键值对，效率比insert高
+ - map.erase(key, val); 删除键值对
+ - map.clear(); 清空map
 
 ## 性能分析
 
