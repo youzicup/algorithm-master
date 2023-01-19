@@ -81,7 +81,7 @@
  - [455. 分发饼干](./leetcode/0455-分发饼干.md)
  
 ### 未分类
- - [2299. 强密码检验器 Ⅱ](./leetcode/2299-强密码检验器%20Ⅱ.md)
+ - [2299. 强密码检验器 Ⅱ](./leetcode/2299-强密码检验器%20Ⅱ.md) *
 
 ### 待解决
  - 手写KMP算法 [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
