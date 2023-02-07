@@ -62,8 +62,9 @@ int main() {
  - vec.front(); vector中得到第一个元素的值
  - vec.back(); vector中得到最后一个元素的值
  - vec.at(i); 相当于vec[i];
- - vec.push_back(x) 将x加到末尾
+ - vec.push_back(x) 将x加到末尾，x为数组元素，
  - vec.pop_back() 删除最后一个元素，不返回
+ - vec.emplace_back(x) 将x添加到末尾，直接在容器尾部创建该元素，省去了拷贝或移动的过程 [参考](C++\emplace与push对比.md)
  - accumulate(vec.begin(), vec.end(), 0) 从`指针1`到`指针2 - 1`的所有元素相加；若第三个元素为0则实现求和，若为 `" "` 则实现字符串拼接
 
 #### 4. stack
